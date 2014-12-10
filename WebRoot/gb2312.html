@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trycatch.html</title>
+	<script>
+// 		var txt="";
+// 		function message() {
+// 			try {
+// 				allert("Welcome guest!");
+// 			} catch (err) {
+// 				txt="本页面有一个错误。\n\n";
+// 				txt += "错误描述：" + err.message + "\n\n";
+// 				txt += "点击确定继续。\n\n";
+// 				alert(txt);
+// 			}
+// 		}
+// 		function trycatch() {
+// 			try {
+// 				var x = document.getElementById("demo").value;
+// 				if (x == "") throw "empty";
+// 				if (isNaN(x)) throw "not a number";
+// 				if (x > 10) throw "too high";
+// 				if (x < 5) throw "too low";
+// 			} catch (err) {
+// 				var y=document.getElementById("mess");
+// 				y.innerHTML="Error: " +err + ".";
+// 			}
+			
+// 		}
+// 		function validate_required(field, alerttxt) {
+// 			with (field) {
+// 				if (value == null || value == "") {
+// 					alert(alerttxt);
+// 					return false;
+// 				}
+// 			}
+// 		}
+		
+// 		function validate_form(thisform) {
+// 			with (thisform) {
+// 				if (validate_required(email, "Email must be filled out!") == false) {
+// 					email.focus();
+// 					return false;
+// 				}
+// 			}
+// 		}
+		function validate_email(field, alerttxt) {
+			with (field) {
+				apos=value.indexOf("@");
+				dotpos=value.lastIndexOf(".");
+				if(apos <1 || dotpos-apos < 2) {
+					alert(alerttxt);
+					return false;
+				} else {
+					return true;
+				}
+			}
+		}
+		function validate_form2(thisform) {
+			with(thisform) {
+				if(validate_email(email, "Not a valid e_mail address!")==false) {
+					email.focus();
+					return false;
+				}
+			}
+		}
+	</script>
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GB2312">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="http://apps.bdimg.com/libs/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- 可选的Bootstrap主题文件（一般不使用） -->
+<script src="http://apps.bdimg.com/libs/bootstrap/3.0.3/css/bootstrap-theme.min.css"></script>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://apps.bdimg.com/libs/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+    <input type="button" value="查看消息" onclick="message()"/>
+    <br><input id="demo" type="text">
+    <button type="button" onclick="trycatch()">Test Input</button>
+    <p id="mess"></p>
+    <form action="w3school.html" onsubmit="return validate_form2(this)" method="post">
+    	Email: <input type="text" name="email" size=30>
+    	<input type="submit" value="Submit">
+    </form>
+    
+   <div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="carousel slide" id="carousel-882549">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-882549">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-882549" class="active">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-882549">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item">
+						<img alt="" src="img/1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								棒球
+							</h4>
+							<p>
+								棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
+							</p>
+						</div>
+					</div>
+					<div class="item active">
+						<img alt="" src="img/2.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								冲浪
+							</h4>
+							<p>
+								冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="img/3.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								自行车
+							</h4>
+							<p>
+								以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。
+							</p>
+						</div>
+					</div>
+				</div> <a data-slide="prev" href="#carousel-882549" class="left carousel-control">【</a> <a data-slide="next" href="#carousel-882549" class="right carousel-control">】</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<ul class="breadcrumb">
+				<li>
+					<a href="help.html">帮助</a> <span class="divider">/</span>
+				</li>
+				<li>
+					<a href="AboutUs.html">关于我们</a> <span class="divider">/</span>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+	
+  </body>
+</html>

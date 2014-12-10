@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>w3school.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GB2312	">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script>
+		function myFunction() {
+		var name;
+		name="Cao Chenghua";
+		document.getElementById("demo").innerHTML=name;
+	}
+	</script>
+	
+  </head>
+
+  <body>
+    <script>
+    function space() {
+	  var message="Hello World!";
+	  var x=message.toUpperCase();
+	 // document.write("can it be seen?");
+	  document.getElementById("space").innerHTML=x;
+  }
+ 
+  	function welcome(name, job) {
+  		alert("Welcome " + name + ", the " + job);
+  }
+  	function showWeek() {
+  		var day = new Date().getDay();
+  		switch(day) {
+  			case 6:
+  				x="Today is Saturday";
+  			break;
+  			case 0:
+  				x="Today is Sunday";
+  			break;
+  		default:
+  			x="Looking for Weekond";
+  		}
+  		document.getElementById("showWeek").innerHTML=x;
+  	}
+  	function name123() {
+    	//var person={fname:"Jhon", lname:"Doe", age:25};
+    	//for (x in person) {
+    	//	txt = txt + person[x];
+    	//}
+    	txt="What should I do?";
+    	document.getElementById("ssh").innerHTML=txt;
+    	alert("Hello");
+    }
+  </script>
+  在 JavaScript 中创建变量通常称为“声明”变量。
+我们使用 var 关键词来声明变量：
+<p id="space">space</p>
+    <p id="demo">This is my HTML page.</p><br>
+    <button type="button" onclick="myFunction()">click here</button>
+    <button type="button" onclick="space()">click here</button>
+    <button onclick="welcome('caochenghua','HITer')">click here</button>
+    <h2 id="showWeek"></h2>
+    <button type="button" onclick="showWeek()">wish pass</button>
+    <script>
+    	cars=['sdf','fcaw','cfesf','sdef'];
+    	for (var i = 0; i < cars.length; i++) {
+    		document.write(cars[i] + '<br>');
+    	}
+    	
+    </script>
+    <p id="ssh">fafsda</p>
+  	<button type="button" onclick="name123()">name</button>
+  	
+    <script>
+		cars=["BMW","Volvo","Saab","Ford"];
+		list:
+		{
+		document.write(cars[0] + "<br>");
+		document.write(cars[1] + "<br>");
+		document.write(cars[2] + "<br>");
+		break list;
+		document.write(cars[3] + "<br>");
+		document.write(cars[4] + "<br>");
+		document.write(cars[5] + "<br>");
+		}
+		</script>
+  </body>
+</html>

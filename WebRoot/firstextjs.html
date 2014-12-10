@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>firstextjs.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GB2312">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+
+  
+  <body>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage');
+if (element.src.match("Office2015Preview"))
+  {
+  element.src="finished.PNG";
+  }
+else
+  {
+  element.src="Office2015Preview.PNG";
+  }
+}
+</script>
+<script>
+	function myFunction() {
+		x=document.getElementById("demo");
+		x.style.color="#ff0000";
+	}
+</script>
+<img id="myimage" onclick="changeImage()" src="Office2015Preview.PNG">
+
+<p>点击灯泡来点亮或熄灭这盏灯</p>
+
+    
+    <button type="button" onclick="alert('Welcome!')">点击这里</button>
+    
+    <p id="demo">JavaScript元素样式</p>
+    
+    <button type="button" onclick="myFunction()">点击这里</button>
+    <p>请输入数字</p>
+    <input id="inputnumber" type="text">
+    <script>
+    	function myFunction2() {
+    		var x = document.getElementById("inputnumber").value;
+    		if (x== "" || isNaN(x)) {
+    			alert("Not Numberic");
+    		}
+    	}
+    </script>
+    <button type="button" onclick="myFunction2()">点击这里</button>
+    <script>alert("Hello World!")</script>
+    <script>document.write("<p>This is a paragraph</p>")</script>
+    
+    
+  </body>
+</html>
